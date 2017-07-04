@@ -5,15 +5,21 @@
 	<meta charset="UTF-8">
 	<title>Semana 4 POO II</title>
 	<link rel="stylesheet" href="css/Style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed" rel="stylesheet">
+	<script type="text/javascript" src="JS/validar.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 </head>
 
 <body>
-<div class="contenedor">
+	<div class="contenedor">
 		<div class="titulo">
 			<header>
-				<div><h1>Curso de PHP - Semana 3</h1></div>
-				<div><p>Programacion orientada a objetos II</p></div>
-				
+				<div>
+					<h1>Curso de PHP - Semana 5</h1>
+				</div>
+				<div>
+					<p>Excepciones y Formularios</p>
+				</div>
 			</header>
 		</div>
 		<div class="main">
@@ -22,22 +28,23 @@
 					<form action="php/resultado.php" method="post">
 						<fieldset>
 							<legend>Formulario de operaciones</legend>
-							
-							<table border="0">
+
+							<table border="0" class="table">
 								<tr>
-									<td>
+									<td id="ingre">
 										<b>Ingresar valor :</b>
 									</td>
 									<td>
-										<input type="text" name="valor" id="digito" placeholder="Digitar Valor numerico">
+										<!-- input que no permite copy paste con funcion JS para solo recibir numeros-->
+										<input type="text" name="valor" id="digito" placeholder="Digitar Valor numerico" required="required" onkeypress="return justNumbers(event);" onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" min="1">
 									</td>
 								</tr>
 								<tr>
-									<td>
+									<td id="cpera">
 										<b>Operaci&oacute;n :</b>
 									</td>
 									<td>
-										<select name="operacion" id="opera">
+										<select name="operacion" id="ope">
 											<option value="0" selected="select">Elegir Operaci&oacute;n</option>
 											<option value="1">Cent&iacute;metros a Metros</option>
 											<option value="2">Metros a Cent&iacute;metros</option>
@@ -48,19 +55,18 @@
 								</tr>
 								<tr>
 									<td colspan="2">
-									<center>
-									<input type="submit" value="Enviar" onclick="clearform();">
-									<input type="reset" value="Borrar">
-									</center>
+										<center>
+											<input type="submit" value="Enviar" class="btn btn-primary" onclick="clearform();">
+											<input type="reset" value="Borrar" class="btn btn-secondaryn">
+										</center>
 									</td>
 								</tr>
 							</table>
 						</fieldset>
-						
 					</form>
 				</div>
 			</div>
-		
+
 		</div>
 		<footer>
 			<div>
@@ -70,6 +76,7 @@
 			</div>
 		</footer>
 	</div>
+
 </body>
 
 </html>

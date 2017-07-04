@@ -2,7 +2,7 @@
 	
 require 'constantes.php';
 
-
+/* clase para albergar operaciones*/
 class conversiones{
 	
 	/* Metros = Centímetros introducidos por el usuario dividido entre 100 */
@@ -32,9 +32,10 @@ class conversiones{
 
 }	
 
-/* Objetos */
-$cent_Metro = new conversiones;
-$metro_Cent = new conversiones;
-$metro_kilo = new conversiones;
-$kilo_metro = new conversiones;
+/* Creacion de objetos */
+	$cent_Metro = new conversiones;
+	$metro_Cent = new conversiones;
+	$metro_kilo = new conversiones;
+	$kilo_metro = new conversiones;
+
 ?>
