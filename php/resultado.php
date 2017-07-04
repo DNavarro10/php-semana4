@@ -17,30 +17,33 @@
 			$valor = $_POST["valor"];
 			$operacion = $_POST['operacion'];
 		
-			if(isset($_POST["valor"])){
+			if(isset($operacion)){
 				
-				switch($operacion)
-				{	
-					case ($operacion):
-					echo "El Resultado de la operacion es : " .$cent_Metro ->cent_To_metros($valor);
+			
+				switch ($operacion == $operacion){
+					
+					case ($operacion == 1):
+					echo "El Resultado de la operacion es : " .$cent_Metro ->cent_To_metros($valor) ." metros"; 
 					break;
 				
-					case ($operacion):
-					echo "El Resultado de la operacion es : " .$metro_Cent ->metros_To_cent($valor);
+					case ($operacion == 2):
+					echo "El Resultado de la operacion es : " .$metro_Cent ->metros_To_cent($valor) . " centimetros";
 					break;
 				
-					case ($operacion):
-					echo "El Resultado de la operacion es : " .$metro_kilo ->metros_to_kilo($valor);
+					case ($operacion == 3):
+					echo "El Resultado de la operacion es : " .$metro_kilo ->metros_To_kilo($valor) . " kilometros";
 					break;
 					
-					case ($operacion):
-					echo "El Resultado de la operacion es : " .$kilo_metro ->kilo_To_metros($valor);
+					case ($operacion == 4):
+					echo "El Resultado de la operacion es : " .$kilo_metro ->kilo_To_metros($valor) . " metros";
 					break;
 				}
-				
-			}
+		
+						}
 			
-		?>			
+		
+		?>		
+			
 		</div>
 		<form>
 			<div align="center">

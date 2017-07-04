@@ -5,7 +5,6 @@
 	<meta charset="UTF-8">
 	<title>Semana 4 POO II</title>
 	<link rel="stylesheet" href="css/Style.css">
-	
 </head>
 
 <body>
@@ -30,26 +29,28 @@
 										<b>Ingresar valor :</b>
 									</td>
 									<td>
-										<input type="text" name="valor" id="digito" placeholder="Digitar Valor a convertir">
+										<input type="text" name="valor" id="digito" placeholder="Digitar Valor numerico">
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<b>Operacion :</b>
+										<b>Operaci&oacute;n :</b>
 									</td>
 									<td>
 										<select name="operacion" id="opera">
-											<option value="" selected="selected">SELECCIONE</option>
-											<option value="Cent&iacute;metros a Metros">Cent&iacute;metros a Metros</option>
-											<option value="Metros a Cent&iacute;metros">Metros a Cent&iacute;metros</option>
-											<option value="Metros a Kil&oacute;metros">Metros a Kil&oacute;metros</option>
-											<option value="Kil&oacute;metros a Metros">Kil&oacute;metros a Metros</option>
+											<option value="0" selected="select">Elegir Operaci&oacute;n</option>
+											<option value="1">Cent&iacute;metros a Metros</option>
+											<option value="2">Metros a Cent&iacute;metros</option>
+											<option value="3">Metros a Kil&oacute;metros</option>
+											<option value="4">Kil&oacute;metros a Metros</option>
 										</select>
 									</td>
 								</tr>
 								<tr>
 									<td colspan="2">
-									<center>										<input type="submit" value="Enviar"><input type="reset" value="Borrar">
+									<center>
+									<input type="submit" value="Enviar" onclick="clearform();">
+									<input type="reset" value="Borrar">
 									</center>
 									</td>
 								</tr>

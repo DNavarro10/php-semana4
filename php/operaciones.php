@@ -8,6 +8,7 @@ class conversiones{
 	/* Metros = Centímetros introducidos por el usuario dividido entre 100 */
 	function cent_To_metros($valor){
 		return ($valor/cien);
+		echo "mt";
 	
 	}
 	
