@@ -26,6 +26,10 @@ header, .main,  footer{
 	-webkit-box-shadow: 2px 3px 5px;
 	box-shadow:2px 3px 5px ;
 }
+.resultado{
+
+	margin-top: 150px;
+}
 header{
 	padding-top: 50px;
 	text-align: center;
