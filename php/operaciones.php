@@ -8,6 +8,7 @@ class conversiones{
 	/* Metros = Centímetros introducidos por el usuario dividido entre 100 */
 	function cent_To_metros($valor){
 		return ($valor/cien);
+	
 	}
 	
 	/* Centímetros = Metros introducidos por el usuario por 100 */
@@ -26,9 +27,13 @@ class conversiones{
 		return($valor*mil);
 	}
 	
-
+	
 
 }	
 
-
+/* Objetos */
+$cent_Metro = new conversiones;
+$metro_Cent = new conversiones;
+$metro_kilo = new conversiones;
+$kilo_metro = new conversiones;
 ?>

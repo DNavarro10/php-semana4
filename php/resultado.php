@@ -12,16 +12,29 @@
 			<!-- Resultado de operacion -->
 		<?php 
 			/* Clase con funciones de conversion*/
-			require "operaciones.php";
+			include_once "operaciones.php";
 			
 			$valor = $_POST["valor"];
-			$operacion = $_POST["operacion"];
-			
-			if (isset($_POST["valor"])){
-				switch("Cent&iacute;metros a Metros")
+			$operacion = $_POST['operacion'];
+		
+			if(isset($_POST["valor"])){
+				
+				switch($operacion)
 				{	
-					case "Cent&iacute;metros a Metros": cent_To_metros($valor);
-					echo 'El Resultado de la operacion es : '.$_POST["$valor"];
+					case ($operacion):
+					echo "El Resultado de la operacion es : " .$cent_Metro ->cent_To_metros($valor);
+					break;
+				
+					case ($operacion):
+					echo "El Resultado de la operacion es : " .$metro_Cent ->metros_To_cent($valor);
+					break;
+				
+					case ($operacion):
+					echo "El Resultado de la operacion es : " .$metro_kilo ->metros_to_kilo($valor);
+					break;
+					
+					case ($operacion):
+					echo "El Resultado de la operacion es : " .$kilo_metro ->kilo_To_metros($valor);
 					break;
 				}
 				
